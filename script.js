@@ -1,3 +1,4 @@
+// For detecting the "Enter" key inside the text area
 document.querySelector('textarea').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       getVal()
@@ -5,6 +6,7 @@ document.querySelector('textarea').addEventListener('keypress', function (e) {
     }
 });
 
+// Getting the text inside the text area
 function getVal() {
     var val = document.querySelector('textarea').value;
     copyToClipboard(yokomoji(val));
@@ -12,11 +14,13 @@ function getVal() {
     alert("クリップボードにコピー済み\nこのままエクセルシートに貼り付け");
 }
 
+// Column to row conversion
 function yokomoji(e) {
     cleanedData = e.replace(/\n/g, "\t");
     return cleanedData;
 }
 
+// Automatically copies result after conversion to the clipboard 
 function copyToClipboard(text) {
     const elem = document.createElement('textarea');
     elem.value = text;
