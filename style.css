@@ -1,6 +1,6 @@
 body {
-    /* background-color: rgb(4, 55, 61); */
-    background-color: rgb(0, 43, 54);
+    /* background-color: rgb(0, 43, 54); */
+    background: linear-gradient(to left, rgb(0, 43, 54)0%, rgb(0, 116, 145)100%);
     color: turquoise;
 }
 
