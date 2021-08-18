@@ -10,7 +10,7 @@ form {
     align-items: center;
 }
 
-.csvText {
+textarea {
     height: 250px;
 }
 

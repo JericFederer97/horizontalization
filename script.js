@@ -13,7 +13,7 @@ function getVal() {
 }
 
 function yokomoji(e) {
-    cleanedData = e.replace("\n", "\t");
+    cleanedData = e.replace(/\n/g, "\t");
     return cleanedData;
 }
 
