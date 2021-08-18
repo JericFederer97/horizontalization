@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横文字ツール by Jeric</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>ジェリックの横文字ツール</h1>
+        <hr class="mb-5">
+        <h3>テキストインプット</h3>
+        
+        <form id="yoko" method="GET">
+            <textarea class="form-control" rows="10" name="csvSource"></textarea>
+            <input id="submitButton" type="submit" class="btn btn-custom btn-lg mt-3" value="横文字化ボタン" onclick="getVal()"></button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(4, 55, 61);
+    color: turquoise;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.csvText {
+    height: 250px;
+}
+
+.btn-custom {
+    background-color: turquoise;
+    transition: all 0.5s;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1);
+}
